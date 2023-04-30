@@ -1,0 +1,34 @@
+.headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+.headerOption__title {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.headerOption__icon {
+  object-fit: contain;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.headerOption__last .headerOption__icon {
+  transform: scale(1.4);
+} /* make the last headerOption icon bigger */
+
+.headerOption:hover {
+  color: #853466;
+}
+
+/* hide last headerOption on med to large screens */
+@media (min-width: 768px) {
+  .headerOption__last {
+    display: none;
+  }
+}

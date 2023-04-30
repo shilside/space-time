@@ -1,0 +1,41 @@
+/* sonny sangha (papa react) linkedn-clone-yt */
+.post {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.post__header {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.post__info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.post__info > p {
+  font-size: 12px;
+  color: gray;
+}
+
+.post__body {
+  overflow-wrap: anywhere;
+  margin-bottom: -15px;
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+.post__info > h2 {
+  font-size: 16px;
+}
+
+.post__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}

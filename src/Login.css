@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap");
+
+.logo_image {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  object-fit: contain;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login {
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.login > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login > form > input {
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #853466;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login > form > button {
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #853466;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login > form > button:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.03);
+}
+
+.login > p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login_register {
+  color: #853466;
+  margin-left: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .logo_image {
+    display: none;
+  }
+}
+
+/* lets do a .login for small screens */
+@media screen and (max-width: 768px) {
+  .login {
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    height: 100vh;
+  }
+
+  .login > form {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: auto; */
+  }
+}
+
+.welcome__header {
+  padding: 20px;
+  text-align: center;
+  margin: 0 7px;
+  font-size: 36px;
+  font-family: "Sora", sans-serif;
+
+  margin-top: 20px;
+}
+
+/* dont show welcome__header on med to large screens */
+@media screen and (min-width: 768px) {
+  .welcome__header {
+    display: none;
+  }
+}
